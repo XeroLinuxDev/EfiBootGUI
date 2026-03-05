@@ -7,10 +7,6 @@
 #include <QDir>
 #include <QStandardPaths>
 
-#ifdef HAVE_KWINDOWSYSTEM
-#include <KWindowEffects>
-#endif
-
 #include "bootmanager.h"
 
 // Supports pipe-separated fallback names: "icon-a|icon-b|icon-c"
@@ -38,30 +34,8 @@ public:
     }
 };
 
-class BlurHelper : public QObject
-{
-    Q_OBJECT
-public:
-    explicit BlurHelper(QObject *parent = nullptr) : QObject(parent) {}
-
-    Q_INVOKABLE void enableBlur(QQuickWindow *window)
-    {
-#ifdef HAVE_KWINDOWSYSTEM
-        if (!window) return;
-        if (KWindowEffects::isEffectAvailable(KWindowEffects::BlurBehind))
-            KWindowEffects::enableBlurBehind(window, true);
-#else
-        Q_UNUSED(window)
-#endif
-    }
-};
-
-#include "main.moc"
-
 int main(int argc, char *argv[])
 {
-    QQuickWindow::setDefaultAlphaBuffer(true);
-
     QGuiApplication app(argc, argv);
     app.setOrganizationName("xero");
     app.setApplicationName("EfiBootMgrGUI");
@@ -91,18 +65,8 @@ int main(int argc, char *argv[])
 
     qmlRegisterType<BootManager>("com.efibootmgrgui", 1, 0, "BootManager");
 
-    BlurHelper blurHelper;
-
     QQmlApplicationEngine engine;
     engine.addImageProvider("icon", new IconImageProvider());
-    engine.rootContext()->setContextProperty("blurHelper", &blurHelper);
-
-    QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
-        &app, [&blurHelper](QObject *obj, const QUrl &) {
-            if (!obj) return;
-            auto *window = qobject_cast<QQuickWindow *>(obj);
-            if (window) blurHelper.enableBlur(window);
-        }, Qt::QueuedConnection);
 
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreationFailed,
         &app, []() { qFatal("QML object creation failed"); }, Qt::QueuedConnection);

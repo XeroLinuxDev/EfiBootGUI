@@ -195,38 +195,5 @@
         ],
         "inputFile": "bootmanager.h",
         "outputRevision": 69
-    },
-    {
-        "classes": [
-            {
-                "className": "BlurHelper",
-                "lineNumber": 41,
-                "methods": [
-                    {
-                        "access": "public",
-                        "arguments": [
-                            {
-                                "name": "window",
-                                "type": "QQuickWindow*"
-                            }
-                        ],
-                        "index": 0,
-                        "lineNumber": 47,
-                        "name": "enableBlur",
-                        "returnType": "void"
-                    }
-                ],
-                "object": true,
-                "qualifiedClassName": "BlurHelper",
-                "superClasses": [
-                    {
-                        "access": "public",
-                        "name": "QObject"
-                    }
-                ]
-            }
-        ],
-        "inputFile": "main.cpp",
-        "outputRevision": 69
     }
 ]

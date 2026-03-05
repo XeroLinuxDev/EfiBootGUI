@@ -25,12 +25,7 @@ ApplicationWindow {
     minimumHeight: 560
     visible: true
     title: "EFI Boot Manager"
-    color: "transparent"
-
-    background: Rectangle {
-        color: Qt.rgba(0.165, 0.165, 0.18, 0.93)
-        radius: 0
-    }
+    color: root.cBg
 
     BootManager {
         id: mgr
@@ -41,46 +36,29 @@ ApplicationWindow {
         anchors { fill: parent; margins: 0 }
         spacing: 0
 
-        // ── Header ───────────────────────────────────────────────────
+        // ── Toolbar ──────────────────────────────────────────────────
         Rectangle {
             Layout.fillWidth: true
-            height: 68
-            color: "transparent"
+            height: 52
+            color: root.cSurface
 
             RowLayout {
                 anchors { fill: parent; leftMargin: 16; rightMargin: 16 }
                 spacing: 12
 
                 Image {
-                    width: 40; height: 40
+                    width: 32; height: 32
                     source: "image://icon/distributor-logo-archlinux"
-                    sourceSize: Qt.size(40, 40)
+                    sourceSize: Qt.size(32, 32)
                     fillMode: Image.PreserveAspectFit
                     smooth: true
                 }
 
-                Column {
-                    spacing: 3
-                    Label {
-                        text: "EFI Boot Manager"
-                        font.pixelSize: 20
-                        font.bold: true
-                        color: root.cText
-                    }
-                    Label {
-                        text: "Manage UEFI boot entries with ease."
-                        font.pixelSize: 12
-                        color: root.cTextSub
-                    }
-                }
-
-                Item { Layout.fillWidth: true }
-
                 Row {
                     spacing: 6
                     Rectangle {
-                        width: 10; height: 10
-                        radius: 5
+                        width: 8; height: 8
+                        radius: 4
                         anchors.verticalCenter: parent.verticalCenter
                         color: mgr.loading ? root.cBlue : root.cGreen
                     }
@@ -94,9 +72,11 @@ ApplicationWindow {
 
                 BusyIndicator {
                     running: mgr.loading
-                    width: 22; height: 22
+                    width: 20; height: 20
                     visible: running
                 }
+
+                Item { Layout.fillWidth: true }
 
                 ToolButton {
                     icon.name: "view-refresh"
@@ -104,7 +84,8 @@ ApplicationWindow {
                     icon.width: 18; icon.height: 18
                     implicitWidth: 34; implicitHeight: 34
                     enabled: !mgr.loading
-                    ToolTip.visible: hovered; ToolTip.text: "Refresh"
+                    ToolTip.visible: hovered
+                    ToolTip.text: "Refresh boot entries"
                     onClicked: mgr.refresh()
                     background: Rectangle {
                         color: parent.pressed ? root.cBtnHov
@@ -143,7 +124,7 @@ ApplicationWindow {
         // ── Divider ──────────────────────────────────────────────────
         Rectangle { Layout.fillWidth: true; height: 1; color: root.cBorder }
 
-        // ── Boot order bar ────────────────────────────────────────────
+        // ── Boot order bar ───────────────────────────────────────────
         Rectangle {
             Layout.fillWidth: true
             height: 52
@@ -168,7 +149,6 @@ ApplicationWindow {
                 }
 
                 Rectangle {
-                    id: applyBtnRect
                     height: 30; implicitWidth: aLbl.implicitWidth + 26
                     color: aMa.pressed ? root.cBtnHov : aMa.containsMouse ? root.cBtn : root.cBtn
                     border.color: root.cBtnBord; border.width: 1
@@ -178,7 +158,12 @@ ApplicationWindow {
                     MouseArea {
                         id: aMa; anchors.fill: parent; hoverEnabled: true
                         enabled: !mgr.loading; cursorShape: Qt.PointingHandCursor
-                        onClicked: { applyConfirm.message = "Write current boot order to EFI variables?"; applyConfirm.open() }
+                        onClicked: {
+                            applyConfirm.actionTitle = "Apply Boot Order"
+                            applyConfirm.message = "You are about to write the current entry order to the EFI BootOrder variable.\n\nThis will change which entries your firmware tries first on the next boot."
+                            applyConfirm.destructive = false
+                            applyConfirm.open()
+                        }
                     }
                     ToolTip.visible: aMa.containsMouse
                     ToolTip.delay: 600
@@ -272,7 +257,9 @@ ApplicationWindow {
                     onMoveDownRequested:    (idx)        => mgr.moveDown(idx)
                     onSetBootNextRequested: (num)        => mgr.setBootNext(num)
                     onDeleteRequested: (num, nm) => {
-                        deleteConfirm.message = "Delete EFI entry Boot" + num + " (" + nm + ")?\nThis cannot be undone."
+                        deleteConfirm.actionTitle = "Delete Boot Entry"
+                        deleteConfirm.message = "You are about to delete:\n\nBoot" + num + " — " + nm
+                        deleteConfirm.destructive = true
                         deleteConfirm._bootNum = num
                         deleteConfirm.open()
                     }
@@ -283,7 +270,7 @@ ApplicationWindow {
         // ── Divider ──────────────────────────────────────────────────
         Rectangle { Layout.fillWidth: true; height: 1; color: root.cBorder }
 
-        // ── Log area ──────────────────────────────────────────────────
+        // ── Log area ─────────────────────────────────────────────────
         Rectangle {
             Layout.fillWidth: true
             height: 95

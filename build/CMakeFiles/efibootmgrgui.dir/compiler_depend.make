@@ -4016,19 +4016,15 @@ CMakeFiles/efibootmgrgui.dir/src/main.cpp.o: /home/techxero/xwork/EfiBootMgrGUI/
   /usr/include/assert.h \
   /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/byteswap.h \
-  /usr/include/bits/confname.h \
   /usr/include/bits/cpu-set.h \
   /usr/include/bits/endian.h \
   /usr/include/bits/endianness.h \
-  /usr/include/bits/environments.h \
   /usr/include/bits/errno.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
   /usr/include/bits/flt-eval-method.h \
   /usr/include/bits/fp-fast.h \
   /usr/include/bits/fp-logb.h \
-  /usr/include/bits/getopt_core.h \
-  /usr/include/bits/getopt_posix.h \
   /usr/include/bits/iscanonical.h \
   /usr/include/bits/libc-header-start.h \
   /usr/include/bits/libm-simd-decl-stubs.h \
@@ -4042,7 +4038,6 @@ CMakeFiles/efibootmgrgui.dir/src/main.cpp.o: /home/techxero/xwork/EfiBootMgrGUI/
   /usr/include/bits/mathcalls.h \
   /usr/include/bits/posix1_lim.h \
   /usr/include/bits/posix2_lim.h \
-  /usr/include/bits/posix_opt.h \
   /usr/include/bits/pthread_stack_min-dynamic.h \
   /usr/include/bits/pthreadtypes-arch.h \
   /usr/include/bits/pthreadtypes.h \
@@ -4091,7 +4086,6 @@ CMakeFiles/efibootmgrgui.dir/src/main.cpp.o: /home/techxero/xwork/EfiBootMgrGUI/
   /usr/include/bits/typesizes.h \
   /usr/include/bits/uintn-identity.h \
   /usr/include/bits/uio_lim.h \
-  /usr/include/bits/unistd_ext.h \
   /usr/include/bits/waitflags.h \
   /usr/include/bits/waitstatus.h \
   /usr/include/bits/wchar.h \
@@ -4312,7 +4306,6 @@ CMakeFiles/efibootmgrgui.dir/src/main.cpp.o: /home/techxero/xwork/EfiBootMgrGUI/
   /usr/include/gnu/stubs.h \
   /usr/include/libintl.h \
   /usr/include/limits.h \
-  /usr/include/linux/close_range.h \
   /usr/include/linux/errno.h \
   /usr/include/linux/limits.h \
   /usr/include/linux/posix_types.h \
@@ -4329,7 +4322,6 @@ CMakeFiles/efibootmgrgui.dir/src/main.cpp.o: /home/techxero/xwork/EfiBootMgrGUI/
   /usr/include/qt6/QtCore/QMargins \
   /usr/include/qt6/QtCore/QObject \
   /usr/include/qt6/QtCore/QProcess \
-  /usr/include/qt6/QtCore/QProcessEnvironment \
   /usr/include/qt6/QtCore/QRect \
   /usr/include/qt6/QtCore/QRectF \
   /usr/include/qt6/QtCore/QSize \
@@ -4586,7 +4578,6 @@ CMakeFiles/efibootmgrgui.dir/src/main.cpp.o: /home/techxero/xwork/EfiBootMgrGUI/
   /usr/include/sys/single_threaded.h \
   /usr/include/sys/types.h \
   /usr/include/time.h \
-  /usr/include/unistd.h \
   /usr/include/wchar.h \
   /usr/include/wctype.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/float.h \
@@ -4766,6 +4757,10 @@ CMakeFiles/efibootmgrgui.dir/build/.qt/rcc/qrc_efibootmgrgui_raw_qml_0.cpp.o:
 
 /usr/lib32/libmount.so.1:
 
+/usr/lib32/libkrb5support.so.0:
+
+/usr/lib32/libkrb5.so.3:
+
 /usr/lib32/libkeyutils.so.1:
 
 /usr/lib32/libk5crypto.so.3:
@@ -4848,6 +4843,8 @@ CMakeFiles/efibootmgrgui.dir/build/.qt/rcc/qrc_efibootmgrgui_raw_qml_0.cpp.o:
 
 /usr/lib/libbrotlidec.so.1:
 
+/usr/lib/libbrotlicommon.so.1:
+
 /usr/lib/libb2.so.1:
 
 /usr/lib/libXfixes.so.3:
@@ -4920,8 +4917,6 @@ CMakeFiles/efibootmgrgui.dir/build/.qt/rcc/qrc_efibootmgrgui_raw_qml_0.cpp.o:
 
 /usr/include/qt6/QtGui/qtransform.h:
 
-/usr/include/unistd.h:
-
 /usr/include/qt6/QtGui/qtguiglobal.h:
 
 /usr/include/qt6/QtGui/qsurfaceformat.h:
@@ -4986,20 +4981,6 @@ CMakeFiles/efibootmgrgui.dir/build/.qt/rcc/qrc_efibootmgrgui_raw_qml_0.cpp.o:
 
 /usr/include/qt6/QtCore/qcoreapplication.h:
 
-/usr/include/qt6/QtCore/qcheckedint_impl.h:
-
-/usr/include/qt6/QtCore/qabstracteventdispatcher.h:
-
-/usr/include/qt6/QtCore/QStandardPaths:
-
-/usr/lib/libgssapi_krb5.so.2:
-
-/usr/include/qt6/QtCore/QSizeF:
-
-/usr/include/qt6/QtCore/QRectF:
-
-/usr/include/qt6/QtCore/QRect:
-
 /usr/lib/libnghttp3.so.9:
 
 /usr/include/c++/15.2.1/unordered_set:
@@ -5046,8 +5027,6 @@ CMakeFiles/efibootmgrgui.dir/build/.qt/rcc/qrc_efibootmgrgui_raw_qml_0.cpp.o:
 
 /usr/include/c++/15.2.1/bits/cxxabi_forced.h:
 
-/usr/include/bits/unistd_ext.h:
-
 /usr/include/c++/15.2.1/ext/aligned_buffer.h:
 
 /usr/include/c++/15.2.1/locale:
@@ -5063,6 +5042,8 @@ CMakeFiles/efibootmgrgui.dir/build/.qt/rcc/qrc_efibootmgrgui_raw_qml_0.cpp.o:
 /usr/include/c++/15.2.1/cstring:
 
 /usr/include/c++/15.2.1/cstdint:
+
+/usr/include/qt6/QtCore/qcheckedint_impl.h:
 
 /usr/include/c++/15.2.1/concepts:
 
@@ -5098,6 +5079,8 @@ CMakeFiles/efibootmgrgui.dir/build/.qt/rcc/qrc_efibootmgrgui_raw_qml_0.cpp.o:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h:
 
+/usr/include/qt6/QtCore/QStandardPaths:
+
 /usr/lib/libpsl.so.5:
 
 /usr/include/c++/15.2.1/pstl/glue_numeric_defs.h:
@@ -5119,10 +5102,6 @@ CMakeFiles/efibootmgrgui.dir/build/.qt/rcc/qrc_efibootmgrgui_raw_qml_0.cpp.o:
 /usr/include/c++/15.2.1/bits/string_view.tcc:
 
 /usr/include/bits/typesizes.h:
-
-/usr/lib32/libkrb5.so.3:
-
-/usr/include/qt6/QtCore/QProcessEnvironment:
 
 /usr/include/qt6/QtCore/qstringbuilder.h:
 
@@ -5165,6 +5144,8 @@ CMakeFiles/efibootmgrgui.dir/build/.qt/rcc/qrc_efibootmgrgui_raw_qml_0.cpp.o:
 /usr/include/c++/15.2.1/bits/shared_ptr_atomic.h:
 
 /usr/include/c++/15.2.1/bits/locale_classes.tcc:
+
+/usr/include/qt6/QtCore/QRect:
 
 /usr/include/c++/15.2.1/tr1/bessel_function.tcc:
 
@@ -5398,10 +5379,6 @@ CMakeFiles/efibootmgrgui.dir/src/main.cpp.o:
 
 /usr/include/bits/long-double.h:
 
-/usr/include/qt6/QtCore/qbasictimer.h:
-
-/usr/include/c++/15.2.1/array:
-
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/messages_members.h:
 
 /usr/include/bits/mathcalls-narrow.h:
@@ -5459,8 +5436,6 @@ CMakeFiles/efibootmgrgui.dir/build/.rcc/qmlcache/efibootmgrgui_qml/ConfirmDialog
 /usr/include/bits/types/struct_FILE.h:
 
 /usr/include/c++/15.2.1/filesystem:
-
-/usr/include/bits/environments.h:
 
 /usr/include/c++/15.2.1/pstl/glue_memory_defs.h:
 
@@ -5524,6 +5499,10 @@ CMakeFiles/efibootmgrgui.dir/build/.rcc/qmlcache/efibootmgrgui_qml/ConfirmDialog
 
 /usr/include/bits/pthreadtypes.h:
 
+/usr/include/qt6/QtGui/qpolygon.h:
+
+/usr/include/qt6/QtCore/qfunctionaltools_impl.h:
+
 /usr/include/qt6/QtCore/qsharedpointer_impl.h:
 
 /usr/include/c++/15.2.1/bits/hashtable_policy.h:
@@ -5552,12 +5531,6 @@ CMakeFiles/efibootmgrgui.dir/build/.rcc/qmlcache/efibootmgrgui_qml/ConfirmDialog
 
 /usr/include/c++/15.2.1/ext/numeric_traits.h:
 
-/usr/lib32/libresolv.so.2:
-
-/usr/include/qt6/QtCore/QSize:
-
-/usr/include/bits/getopt_core.h:
-
 /usr/include/bits/local_lim.h:
 
 /usr/include/qt6/QtCore/qtcoreexports.h:
@@ -5583,12 +5556,6 @@ efibootmgrgui_autogen/mocs_compilation.cpp:
 /usr/include/c++/15.2.1/tuple:
 
 /usr/include/errno.h:
-
-/usr/include/qt6/QtGui/qpolygon.h:
-
-/usr/include/qt6/QtCore/qfunctionaltools_impl.h:
-
-/usr/include/bits/getopt_posix.h:
 
 /usr/include/bits/stdlib-float.h:
 
@@ -5830,6 +5797,10 @@ efibootmgrgui_qmltyperegistrations.cpp:
 
 efibootmgrgui_autogen/include/main.moc:
 
+/usr/include/c++/15.2.1/array:
+
+/usr/include/qt6/QtCore/qbasictimer.h:
+
 /usr/include/qt6/QtCore/q20utility.h:
 
 /usr/include/qt6/QtGui/qwindowdefs.h:
@@ -5899,8 +5870,6 @@ efibootmgrgui_autogen/include/main.moc:
 /usr/include/qt6/QtCore/qconstructormacros.h:
 
 /usr/include/qt6/QtCore/qutf8stringview.h:
-
-/usr/include/linux/close_range.h:
 
 /usr/include/qt6/QtCore/qcontainerfwd.h:
 
@@ -6045,6 +6014,12 @@ CMakeFiles/efibootmgrgui.dir/src/bootentry.cpp.o:
 /usr/include/qt6/QtCore/qtextstream.h:
 
 /usr/include/qt6/QtCore/qtformat_impl.h:
+
+/usr/include/qt6/QtCore/QRectF:
+
+/usr/lib32/libresolv.so.2:
+
+/usr/include/qt6/QtCore/QSize:
 
 /usr/include/bits/stdio_lim.h:
 
@@ -6222,10 +6197,6 @@ CMakeFiles/efibootmgrgui.dir/build/.qt/rcc/qrc_qmake_com_efibootmgrgui.cpp.o:
 
 /home/techxero/xwork/EfiBootMgrGUI/src/bootmanager.h:
 
-/usr/lib/libbrotlicommon.so.1:
-
-/usr/include/bits/posix_opt.h:
-
 /usr/include/qt6/QtCore/qvector.h:
 
 /usr/include/c++/15.2.1/bits/stl_heap.h:
@@ -6242,10 +6213,6 @@ CMakeFiles/efibootmgrgui.dir/build/.qt/rcc/qrc_qmake_com_efibootmgrgui.cpp.o:
 
 /usr/include/KF6/KWindowSystem/kwindowsystem_version.h:
 
-/usr/lib32/libkrb5support.so.0:
-
-/usr/include/bits/confname.h:
-
 /usr/include/c++/15.2.1/utility:
 
 /usr/include/qt6/QtCore/QList:
@@ -6255,3 +6222,9 @@ CMakeFiles/efibootmgrgui.dir/build/.qt/rcc/qrc_qmake_com_efibootmgrgui.cpp.o:
 /usr/include/qt6/QtQml/qqmlmoduleregistration.h:
 
 /usr/include/qt6/QtCore/QMargins:
+
+/usr/lib/libgssapi_krb5.so.2:
+
+/usr/include/qt6/QtCore/QSizeF:
+
+/usr/include/qt6/QtCore/qabstracteventdispatcher.h:

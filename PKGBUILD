@@ -18,9 +18,6 @@ makedepends=(
     'qt6-tools'
     'git'
 )
-optdepends=(
-    'kf6-kwindowsystem: blur/transparency support on KWin'
-)
 source=("git+$url.git")
 sha256sums=('SKIP')
 

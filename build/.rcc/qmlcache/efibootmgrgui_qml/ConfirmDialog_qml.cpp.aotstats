@@ -10,63 +10,47 @@
                             "column": 22,
                             "durationMicroseconds": 0,
                             "functionName": "standardButtons",
-                            "line": 12,
+                            "line": 13,
                             "message": "Could not find property \"standardButtons\"."
                         },
                         {
                             "codegenResult": 2,
-                            "column": 19,
+                            "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 25,
+                            "line": 34,
                             "message": "Could not find property \"text\"."
                         },
                         {
                             "codegenResult": 2,
-                            "column": 29,
+                            "column": 24,
                             "durationMicroseconds": 0,
-                            "functionName": "left",
-                            "line": 24,
-                            "message": "Could not find property \"left\"."
+                            "functionName": "color",
+                            "line": 36,
+                            "message": "Could not find property \"color\"."
                         },
                         {
                             "codegenResult": 2,
-                            "column": 58,
+                            "column": 23,
                             "durationMicroseconds": 0,
-                            "functionName": "verticalCenter",
-                            "line": 24,
-                            "message": "Could not find property \"verticalCenter\"."
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 20,
-                            "durationMicroseconds": 0,
-                            "functionName": "width",
-                            "line": 32,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 29,
-                            "durationMicroseconds": 0,
-                            "functionName": "bottom",
-                            "line": 31,
-                            "message": ""
+                            "functionName": "text",
+                            "line": 40,
+                            "message": "Could not find property \"text\"."
                         },
                         {
                             "codegenResult": 2,
-                            "column": 25,
+                            "column": 27,
                             "durationMicroseconds": 0,
-                            "functionName": "implicitHeight",
-                            "line": 39,
-                            "message": "Cannot access value for name msgLabel"
+                            "functionName": "wrapMode",
+                            "line": 45,
+                            "message": "Could not find property \"wrapMode\"."
                         },
                         {
                             "codegenResult": 2,
                             "column": 19,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 43,
+                            "line": 55,
                             "message": "Could not find property \"text\"."
                         },
                         {
@@ -74,63 +58,79 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "wrapMode",
-                            "line": 44,
+                            "line": 56,
                             "message": "Could not find property \"wrapMode\"."
                         },
                         {
                             "codegenResult": 2,
-                            "column": 29,
+                            "column": 21,
+                            "durationMicroseconds": 0,
+                            "functionName": "height",
+                            "line": 68,
+                            "message": "Cannot access value for name warningLabel"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 20,
+                            "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 69,
+                            "message": "Cannot access value for name root"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 27,
+                            "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 70,
+                            "message": "Cannot access value for name root"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 27,
+                            "durationMicroseconds": 0,
+                            "functionName": "wrapMode",
+                            "line": 78,
+                            "message": "Could not find property \"wrapMode\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 24,
+                            "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 80,
+                            "message": "Could not find property \"color\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 33,
                             "durationMicroseconds": 0,
                             "functionName": "left",
-                            "line": 42,
+                            "line": 76,
                             "message": "Could not find property \"left\"."
                         },
                         {
                             "codegenResult": 2,
-                            "column": 49,
+                            "column": 53,
                             "durationMicroseconds": 0,
                             "functionName": "right",
-                            "line": 42,
+                            "line": 76,
                             "message": "Could not find property \"right\"."
                         },
                         {
                             "codegenResult": 2,
-                            "column": 68,
+                            "column": 83,
                             "durationMicroseconds": 0,
-                            "functionName": "top",
-                            "line": 42,
-                            "message": "Could not find property \"top\"."
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 20,
-                            "durationMicroseconds": 0,
-                            "functionName": "width",
-                            "line": 56,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 26,
-                            "durationMicroseconds": 0,
-                            "functionName": "top",
-                            "line": 55,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 29,
-                            "durationMicroseconds": 0,
-                            "functionName": "fill",
-                            "line": 60,
-                            "message": ""
+                            "functionName": "verticalCenter",
+                            "line": 76,
+                            "message": "Could not find property \"verticalCenter\"."
                         },
                         {
                             "codegenResult": 2,
-                            "column": 44,
+                            "column": 32,
                             "durationMicroseconds": 0,
                             "functionName": "implicitWidth",
-                            "line": 65,
+                            "line": 98,
                             "message": "Cannot access value for name cancelLbl"
                         },
                         {
@@ -138,47 +138,47 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 66,
+                            "line": 99,
                             "message": "Cannot access value for name cancelMa"
                         },
                         {
                             "codegenResult": 2,
-                            "column": 58,
+                            "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 69,
+                            "line": 106,
                             "message": "Could not find property \"centerIn\"."
                         },
                         {
                             "codegenResult": 0,
-                            "column": 98,
+                            "column": 34,
                             "durationMicroseconds": 0,
                             "functionName": "cursorShape",
-                            "line": 70,
+                            "line": 115,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
-                            "column": 132,
+                            "column": 32,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 70,
+                            "line": 116,
                             "message": "Cannot access value for name root"
                         },
                         {
                             "codegenResult": 0,
-                            "column": 57,
+                            "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 70,
+                            "line": 113,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
-                            "column": 44,
+                            "column": 32,
                             "durationMicroseconds": 0,
                             "functionName": "implicitWidth",
-                            "line": 74,
+                            "line": 123,
                             "message": "Cannot access value for name confirmLbl"
                         },
                         {
@@ -186,39 +186,55 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 75,
+                            "line": 124,
                             "message": "Cannot access value for name confirmMa"
                         },
                         {
                             "codegenResult": 2,
-                            "column": 59,
+                            "column": 31,
+                            "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 131,
+                            "message": "Cannot access value for name root"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 27,
+                            "durationMicroseconds": 0,
+                            "functionName": "text",
+                            "line": 138,
+                            "message": "Could not find property \"text\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 78,
+                            "line": 137,
                             "message": "Could not find property \"centerIn\"."
                         },
                         {
                             "codegenResult": 0,
-                            "column": 99,
+                            "column": 34,
                             "durationMicroseconds": 0,
                             "functionName": "cursorShape",
-                            "line": 79,
+                            "line": 147,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
-                            "column": 133,
+                            "column": 32,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 79,
+                            "line": 148,
                             "message": "Cannot access value for name root"
                         },
                         {
                             "codegenResult": 0,
-                            "column": 58,
+                            "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 79,
+                            "line": 145,
                             "message": ""
                         }
                     ],

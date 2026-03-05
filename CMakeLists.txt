@@ -7,9 +7,6 @@ set(CMAKE_AUTOMOC ON)
 
 find_package(Qt6 REQUIRED COMPONENTS Core Gui Qml Quick QuickControls2)
 
-# KWindowSystem is optional — provides blur on KWin, gracefully absent elsewhere
-find_package(KF6WindowSystem QUIET)
-
 qt_add_executable(efibootmgrgui
     src/main.cpp
     src/bootmanager.cpp
@@ -37,14 +34,6 @@ target_link_libraries(efibootmgrgui PRIVATE
     Qt6::Quick
     Qt6::QuickControls2
 )
-
-if(KF6WindowSystem_FOUND)
-    target_compile_definitions(efibootmgrgui PRIVATE HAVE_KWINDOWSYSTEM)
-    target_link_libraries(efibootmgrgui PRIVATE KF6::WindowSystem)
-    message(STATUS "KF6WindowSystem found — blur/transparency enabled")
-else()
-    message(STATUS "KF6WindowSystem not found — blur disabled")
-endif()
 
 install(TARGETS efibootmgrgui DESTINATION bin)
 

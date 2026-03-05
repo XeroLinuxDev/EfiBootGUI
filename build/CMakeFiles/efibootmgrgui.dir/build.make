@@ -407,16 +407,14 @@ efibootmgrgui: CMakeFiles/efibootmgrgui.dir/build/.qt/rcc/qrc_efibootmgrgui_raw_
 efibootmgrgui: CMakeFiles/efibootmgrgui.dir/build.make
 efibootmgrgui: CMakeFiles/efibootmgrgui.dir/compiler_depend.ts
 efibootmgrgui: /usr/lib/libQt6QuickControls2.so.6.10.2
-efibootmgrgui: /usr/lib/libKF6WindowSystem.so.6.23.0
 efibootmgrgui: /usr/lib/libQt6Quick.so.6.10.2
 efibootmgrgui: /usr/lib/libQt6OpenGL.so.6.10.2
-efibootmgrgui: /usr/lib/libQt6Qml.so.6.10.2
-efibootmgrgui: /usr/lib/libQt6Network.so.6.10.2
 efibootmgrgui: /usr/lib/libQt6Gui.so.6.10.2
 efibootmgrgui: /usr/lib/libGLX.so
 efibootmgrgui: /usr/lib/libOpenGL.so
+efibootmgrgui: /usr/lib/libQt6Qml.so.6.10.2
+efibootmgrgui: /usr/lib/libQt6Network.so.6.10.2
 efibootmgrgui: /usr/lib/libQt6Core.so.6.10.2
-efibootmgrgui: /usr/lib/libX11.so
 efibootmgrgui: CMakeFiles/efibootmgrgui.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/techxero/xwork/EfiBootMgrGUI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable efibootmgrgui"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/efibootmgrgui.dir/link.txt --verbose=$(VERBOSE)

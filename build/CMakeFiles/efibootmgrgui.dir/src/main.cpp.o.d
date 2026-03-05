@@ -434,13 +434,6 @@ CMakeFiles/efibootmgrgui.dir/src/main.cpp.o: \
  /usr/include/qt6/QtCore/qfileinfo.h \
  /usr/include/qt6/QtCore/QStandardPaths \
  /usr/include/qt6/QtCore/qstandardpaths.h \
- /usr/include/KF6/KWindowSystem/KWindowEffects \
- /usr/include/KF6/KWindowSystem/kwindoweffects.h \
- /usr/include/KF6/KWindowSystem/kwindowsystem_export.h \
- /usr/include/KF6/KWindowSystem/kwindowsystem_version.h \
- /usr/include/qt6/QtGui/QWidgetList /usr/include/qt6/QtGui/qwindowdefs.h \
- /usr/include/qt6/QtGui/QColor /usr/include/qt6/QtGui/qcolor.h \
- /usr/include/qt6/QtGui/QRegion /usr/include/qt6/QtGui/qregion.h \
  /home/techxero/xwork/EfiBootMgrGUI/src/bootmanager.h \
  /usr/include/qt6/QtCore/QAbstractListModel \
  /usr/include/qt6/QtCore/qabstractitemmodel.h \
@@ -449,8 +442,4 @@ CMakeFiles/efibootmgrgui.dir/src/main.cpp.o: \
  /usr/include/qt6/QtCore/QStringList \
  /usr/include/qt6/QtCore/qstringlist.h /usr/include/qt6/QtCore/QVector \
  /usr/include/qt6/QtCore/qvector.h \
- /home/techxero/xwork/EfiBootMgrGUI/src/bootentry.h \
- /home/techxero/xwork/EfiBootMgrGUI/build/efibootmgrgui_autogen/include/main.moc \
- /usr/include/qt6/QtCore/qtmochelpers.h \
- /usr/include/qt6/QtCore/qtmocconstants.h \
- /usr/include/qt6/QtCore/q20algorithm.h
+ /home/techxero/xwork/EfiBootMgrGUI/src/bootentry.h
