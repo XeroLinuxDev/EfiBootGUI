@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=EFI Boot Manager GUI
+GenericName=EFI Boot Manager
+Comment=Manage UEFI/EFI boot entries on Linux
+Exec=efibootmgrgui
+Icon=efibootmgrgui
+Terminal=false
+Type=Application
+Categories=System;Settings;
+Keywords=efi;uefi;boot;bootloader;

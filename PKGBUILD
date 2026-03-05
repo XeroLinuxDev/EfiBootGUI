@@ -32,4 +32,10 @@ build() {
 
 package() {
     DESTDIR="$pkgdir" cmake --install build
+
+    install -Dm644 "EfiBootGUI/efibootmgrgui.desktop" \
+        "$pkgdir/usr/share/applications/efibootmgrgui.desktop"
+
+    install -Dm644 "EfiBootGUI/assets/logo.png" \
+        "$pkgdir/usr/share/icons/hicolor/256x256/apps/efibootmgrgui.png"
 }
