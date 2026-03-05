@@ -4,11 +4,15 @@
 #include <QQuickImageProvider>
 #include <QQuickWindow>
 #include <QIcon>
+#include <QDir>
 #include <QProcess>
 #include <QProcessEnvironment>
 #include <QStandardPaths>
-#include <KWindowEffects>
 #include <unistd.h>
+
+#ifdef HAVE_KWINDOWSYSTEM
+#include <KWindowEffects>
+#endif
 
 #include "bootmanager.h"
 
@@ -73,8 +77,13 @@ public:
 
     Q_INVOKABLE void enableBlur(QQuickWindow *window)
     {
-        if (window)
+#ifdef HAVE_KWINDOWSYSTEM
+        if (!window) return;
+        if (KWindowEffects::isEffectAvailable(KWindowEffects::BlurBehind))
             KWindowEffects::enableBlurBehind(window, true);
+#else
+        Q_UNUSED(window)
+#endif
     }
 };
 
@@ -114,19 +123,31 @@ int main(int argc, char *argv[])
         return 0;
     }
 
-    // Icon theme: Tela-circle-purple has all distro logos; breeze covers action icons
+    // Build icon search paths from XDG standard locations (safe for any user/DE)
     {
         QStringList paths = QIcon::themeSearchPaths();
-        for (const QString &p : {
-                 QStringLiteral("/home/techxero/.local/share/icons"),
-                 QStringLiteral("/usr/share/icons"),
-                 QStringLiteral("/usr/local/share/icons") }) {
-            if (!paths.contains(p)) paths << p;
+        const auto dataDirs = QStandardPaths::standardLocations(
+            QStandardPaths::GenericDataLocation);
+        for (const QString &dir : dataDirs) {
+            const QString iconDir = dir + "/icons";
+            if (!paths.contains(iconDir))
+                paths << iconDir;
         }
         QIcon::setThemeSearchPaths(paths);
     }
-    QIcon::setThemeName("Tela-circle-purple");
-    QIcon::setFallbackThemeName("breeze");
+
+    // Use Tela-circle-purple only if it is actually installed
+    bool telaFound = false;
+    for (const QString &path : QIcon::themeSearchPaths()) {
+        if (QDir(path + "/Tela-circle-purple").exists()) {
+            telaFound = true;
+            break;
+        }
+    }
+    if (telaFound) {
+        QIcon::setThemeName("Tela-circle-purple");
+        QIcon::setFallbackThemeName("breeze");
+    }
 
     qmlRegisterType<BootManager>("com.efibootmgrgui", 1, 0, "BootManager");
 

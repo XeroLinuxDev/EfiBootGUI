@@ -200,12 +200,12 @@
         "classes": [
             {
                 "className": "AppHelper",
-                "lineNumber": 40,
+                "lineNumber": 44,
                 "methods": [
                     {
                         "access": "public",
                         "index": 0,
-                        "lineNumber": 46,
+                        "lineNumber": 50,
                         "name": "relaunchAsRoot",
                         "returnType": "void"
                     }
@@ -221,7 +221,7 @@
             },
             {
                 "className": "BlurHelper",
-                "lineNumber": 68,
+                "lineNumber": 72,
                 "methods": [
                     {
                         "access": "public",
@@ -232,7 +232,7 @@
                             }
                         ],
                         "index": 0,
-                        "lineNumber": 74,
+                        "lineNumber": 78,
                         "name": "enableBlur",
                         "returnType": "void"
                     }
