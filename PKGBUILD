@@ -1,6 +1,6 @@
 # Maintainer: DarkXero <https://xerolinux.xyz>
 pkgname=efibootmgrgui
-pkgver=1.0.1
+pkgver=1.0.2
 pkgrel=1
 pkgdesc="A GUI for managing UEFI/EFI boot entries on Linux — no terminal required"
 arch=('x86_64')
@@ -10,7 +10,7 @@ depends=(
     'efibootmgr'
     'qt6-base'
     'qt6-declarative'
-    'kf6-kwindowsystem'
+    'kwindowsystem'
     'kdesu'
 )
 makedepends=(
