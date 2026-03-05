@@ -17,12 +17,18 @@ makedepends=(
     'cmake'
     'ninja'
     'qt6-tools'
+    'git'
 )
-source=("$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz")
+source=("git+$url.git")
 sha256sums=('SKIP')
 
+pkgver() {
+    cd "EfiBootGUI"
+    git describe --tags --abbrev=0 | sed 's/^v//'
+}
+
 build() {
-    cmake -B build -S "EfiBootGUI-$pkgver" \
+    cmake -B build -S "EfiBootGUI" \
         -G Ninja \
         -DCMAKE_BUILD_TYPE=Release \
         -DCMAKE_INSTALL_PREFIX=/usr
