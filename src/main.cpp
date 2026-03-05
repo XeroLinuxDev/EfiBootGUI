@@ -5,10 +5,7 @@
 #include <QQuickWindow>
 #include <QIcon>
 #include <QDir>
-#include <QProcess>
-#include <QProcessEnvironment>
 #include <QStandardPaths>
-#include <unistd.h>
 
 #ifdef HAVE_KWINDOWSYSTEM
 #include <KWindowEffects>
@@ -41,34 +38,6 @@ public:
     }
 };
 
-class AppHelper : public QObject
-{
-    Q_OBJECT
-public:
-    explicit AppHelper(QObject *parent = nullptr) : QObject(parent) {}
-
-    Q_INVOKABLE void relaunchAsRoot()
-    {
-        QString exe = QCoreApplication::applicationFilePath();
-
-        if (!QStandardPaths::findExecutable("kdesu").isEmpty()) {
-            QProcess::startDetached("kdesu", { "-c", exe });
-            QCoreApplication::quit();
-            return;
-        }
-
-        QProcessEnvironment env = QProcessEnvironment::systemEnvironment();
-        QProcess::startDetached("pkexec", {
-            "env",
-            "DISPLAY="         + env.value("DISPLAY"),
-            "WAYLAND_DISPLAY=" + env.value("WAYLAND_DISPLAY"),
-            "XDG_RUNTIME_DIR=" + env.value("XDG_RUNTIME_DIR"),
-            exe
-        });
-        QCoreApplication::quit();
-    }
-};
-
 class BlurHelper : public QObject
 {
     Q_OBJECT
@@ -89,25 +58,6 @@ public:
 
 #include "main.moc"
 
-static void autoElevate()
-{
-    QString exe = QCoreApplication::applicationFilePath();
-
-    if (!QStandardPaths::findExecutable("kdesu").isEmpty()) {
-        QProcess::startDetached("kdesu", { "-c", exe });
-        return;
-    }
-
-    QProcessEnvironment env = QProcessEnvironment::systemEnvironment();
-    QProcess::startDetached("pkexec", {
-        "env",
-        "DISPLAY="         + env.value("DISPLAY"),
-        "WAYLAND_DISPLAY=" + env.value("WAYLAND_DISPLAY"),
-        "XDG_RUNTIME_DIR=" + env.value("XDG_RUNTIME_DIR"),
-        exe
-    });
-}
-
 int main(int argc, char *argv[])
 {
     QQuickWindow::setDefaultAlphaBuffer(true);
@@ -116,12 +66,6 @@ int main(int argc, char *argv[])
     app.setOrganizationName("xero");
     app.setApplicationName("EfiBootMgrGUI");
     app.setApplicationVersion("1.0.0");
-
-    // Auto-elevate on launch if not root
-    if (getuid() != 0) {
-        autoElevate();
-        return 0;
-    }
 
     // Build icon search paths from XDG standard locations (safe for any user/DE)
     {
@@ -137,26 +81,20 @@ int main(int argc, char *argv[])
     }
 
     // Use Tela-circle-purple only if it is actually installed
-    bool telaFound = false;
     for (const QString &path : QIcon::themeSearchPaths()) {
         if (QDir(path + "/Tela-circle-purple").exists()) {
-            telaFound = true;
+            QIcon::setThemeName("Tela-circle-purple");
+            QIcon::setFallbackThemeName("breeze");
             break;
         }
-    }
-    if (telaFound) {
-        QIcon::setThemeName("Tela-circle-purple");
-        QIcon::setFallbackThemeName("breeze");
     }
 
     qmlRegisterType<BootManager>("com.efibootmgrgui", 1, 0, "BootManager");
 
-    AppHelper  appHelper;
     BlurHelper blurHelper;
 
     QQmlApplicationEngine engine;
     engine.addImageProvider("icon", new IconImageProvider());
-    engine.rootContext()->setContextProperty("appHelper",  &appHelper);
     engine.rootContext()->setContextProperty("blurHelper", &blurHelper);
 
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,

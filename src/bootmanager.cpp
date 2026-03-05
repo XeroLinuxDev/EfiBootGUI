@@ -55,7 +55,7 @@ void BootManager::refresh()
     runEfibootmgr({}, [this](int code, const QString &out) {
         if (code != 0) {
             appendLog("efibootmgr failed (exit " + QString::number(code) + "). Are you root?");
-            emit operationFinished(false, "efibootmgr failed. Run as root or via pkexec.");
+            emit operationFinished(false, "efibootmgr failed. Authentication may have been cancelled.");
             return;
         }
         parseOutput(out);
@@ -155,10 +155,10 @@ void BootManager::runEfibootmgr(const QStringList &args,
 
     auto *proc = new QProcess(this);
 
-    // Run efibootmgr directly — on most systems efivars are readable without
-    // root; write ops will fail with a clear error if permissions are denied.
-    QString program   = "efibootmgr";
-    QStringList fullArgs = args;
+    // Use pkexec so the app runs unprivileged; polkit handles auth once per
+    // session (auth_admin_keep policy). Works on KDE, GNOME, COSMIC, etc.
+    QString program      = "pkexec";
+    QStringList fullArgs = QStringList{"/usr/bin/efibootmgr"} + args;
 
     connect(proc, &QProcess::finished, this,
             [this, proc, callback](int exitCode, QProcess::ExitStatus) {

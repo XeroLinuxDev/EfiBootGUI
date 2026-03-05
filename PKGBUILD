@@ -1,6 +1,6 @@
 # Maintainer: DarkXero <https://xerolinux.xyz>
 pkgname=efibootmgrgui
-pkgver=1.0.5
+pkgver=1.0.6
 pkgrel=1
 pkgdesc="A GUI for managing UEFI/EFI boot entries on Linux — no terminal required"
 arch=('x86_64')
@@ -20,7 +20,6 @@ makedepends=(
 )
 optdepends=(
     'kf6-kwindowsystem: blur/transparency support on KWin'
-    'kdesu: graphical privilege elevation on KDE Plasma'
 )
 source=("git+$url.git")
 sha256sums=('SKIP')

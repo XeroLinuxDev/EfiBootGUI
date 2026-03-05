@@ -431,15 +431,9 @@ CMakeFiles/efibootmgrgui.dir/src/main.cpp.o: \
  /usr/include/c++/15.2.1/bits/sstream.tcc /usr/include/c++/15.2.1/codecvt \
  /usr/include/c++/15.2.1/bits/fs_dir.h \
  /usr/include/c++/15.2.1/bits/fs_ops.h \
- /usr/include/qt6/QtCore/qfileinfo.h /usr/include/qt6/QtCore/QProcess \
- /usr/include/qt6/QtCore/qprocess.h \
- /usr/include/qt6/QtCore/QProcessEnvironment \
+ /usr/include/qt6/QtCore/qfileinfo.h \
  /usr/include/qt6/QtCore/QStandardPaths \
- /usr/include/qt6/QtCore/qstandardpaths.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
- /usr/include/bits/confname.h /usr/include/bits/getopt_posix.h \
- /usr/include/bits/getopt_core.h /usr/include/bits/unistd_ext.h \
- /usr/include/linux/close_range.h \
+ /usr/include/qt6/QtCore/qstandardpaths.h \
  /usr/include/KF6/KWindowSystem/KWindowEffects \
  /usr/include/KF6/KWindowSystem/kwindoweffects.h \
  /usr/include/KF6/KWindowSystem/kwindowsystem_export.h \
@@ -450,6 +444,7 @@ CMakeFiles/efibootmgrgui.dir/src/main.cpp.o: \
  /home/techxero/xwork/EfiBootMgrGUI/src/bootmanager.h \
  /usr/include/qt6/QtCore/QAbstractListModel \
  /usr/include/qt6/QtCore/qabstractitemmodel.h \
+ /usr/include/qt6/QtCore/QProcess /usr/include/qt6/QtCore/qprocess.h \
  /usr/include/qt6/QtCore/QString /usr/include/qt6/QtCore/qstring.h \
  /usr/include/qt6/QtCore/QStringList \
  /usr/include/qt6/QtCore/qstringlist.h /usr/include/qt6/QtCore/QVector \

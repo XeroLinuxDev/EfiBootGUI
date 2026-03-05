@@ -47,3 +47,6 @@ else()
 endif()
 
 install(TARGETS efibootmgrgui DESTINATION bin)
+
+install(FILES polkit/org.xerolinux.efibootmgrgui.policy
+    DESTINATION share/polkit-1/actions)

@@ -1,29 +1,8 @@
 {
     "classes": [
         {
-            "className": "AppHelper",
-            "lineNumber": 44,
-            "methods": [
-                {
-                    "access": "public",
-                    "index": 0,
-                    "lineNumber": 50,
-                    "name": "relaunchAsRoot",
-                    "returnType": "void"
-                }
-            ],
-            "object": true,
-            "qualifiedClassName": "AppHelper",
-            "superClasses": [
-                {
-                    "access": "public",
-                    "name": "QObject"
-                }
-            ]
-        },
-        {
             "className": "BlurHelper",
-            "lineNumber": 72,
+            "lineNumber": 41,
             "methods": [
                 {
                     "access": "public",
@@ -34,7 +13,7 @@
                         }
                     ],
                     "index": 0,
-                    "lineNumber": 78,
+                    "lineNumber": 47,
                     "name": "enableBlur",
                     "returnType": "void"
                 }
