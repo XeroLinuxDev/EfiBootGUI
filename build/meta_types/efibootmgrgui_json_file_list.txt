@@ -1,0 +1,2 @@
+/home/techxero/xwork/EfiBootMgrGUI/build/efibootmgrgui_autogen/include/../UVLADIE3JM/moc_bootmanager.cpp.json
+/home/techxero/xwork/EfiBootMgrGUI/build/efibootmgrgui_autogen/include/main.moc.json

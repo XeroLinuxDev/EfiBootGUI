@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="/com/efibootmgrgui/">
+    <file alias="qml/main.qml">/home/techxero/xwork/EfiBootMgrGUI/qml/main.qml</file>
+    <file alias="qml/BootEntryDelegate.qml">/home/techxero/xwork/EfiBootMgrGUI/qml/BootEntryDelegate.qml</file>
+    <file alias="qml/ConfirmDialog.qml">/home/techxero/xwork/EfiBootMgrGUI/qml/ConfirmDialog.qml</file>
+    <file alias="qml/AboutWindow.qml">/home/techxero/xwork/EfiBootMgrGUI/qml/AboutWindow.qml</file>
+  </qresource>
+</RCC>
+

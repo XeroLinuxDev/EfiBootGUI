@@ -1,0 +1,8 @@
+module com.efibootmgrgui
+typeinfo efibootmgrgui.qmltypes
+prefer :/com/efibootmgrgui/
+BootEntryDelegate 1.0 qml/BootEntryDelegate.qml
+ConfirmDialog 1.0 qml/ConfirmDialog.qml
+AboutWindow 1.0 qml/AboutWindow.qml
+depends QtQuick
+

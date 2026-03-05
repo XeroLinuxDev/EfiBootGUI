@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_efibootmgrgui_FILE /home/techxero/xwork/EfiBootMgrGUI/build/efibootmgrgui)
+set(__QT_DEPLOY_TARGET_efibootmgrgui_TYPE EXECUTABLE)

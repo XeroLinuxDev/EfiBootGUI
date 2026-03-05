@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/techxero/xwork/EfiBootMgrGUI/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

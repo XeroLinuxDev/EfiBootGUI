@@ -1,0 +1,54 @@
+{
+    "classes": [
+        {
+            "className": "AppHelper",
+            "lineNumber": 40,
+            "methods": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "lineNumber": 46,
+                    "name": "relaunchAsRoot",
+                    "returnType": "void"
+                }
+            ],
+            "object": true,
+            "qualifiedClassName": "AppHelper",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        },
+        {
+            "className": "BlurHelper",
+            "lineNumber": 68,
+            "methods": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "window",
+                            "type": "QQuickWindow*"
+                        }
+                    ],
+                    "index": 0,
+                    "lineNumber": 74,
+                    "name": "enableBlur",
+                    "returnType": "void"
+                }
+            ],
+            "object": true,
+            "qualifiedClassName": "BlurHelper",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "main.cpp",
+    "outputRevision": 69
+}

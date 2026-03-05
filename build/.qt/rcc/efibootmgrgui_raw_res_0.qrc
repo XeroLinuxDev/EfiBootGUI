@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/com/efibootmgrgui/">
+    <file alias="assets/logo.png">/home/techxero/xwork/EfiBootMgrGUI/assets/logo.png</file>
+  </qresource>
+</RCC>
+

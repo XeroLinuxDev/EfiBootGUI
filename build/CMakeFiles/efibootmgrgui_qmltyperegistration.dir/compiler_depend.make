@@ -1,0 +1,2 @@
+# Empty custom commands generated dependencies file for efibootmgrgui_qmltyperegistration.
+# This may be replaced when dependencies are built.

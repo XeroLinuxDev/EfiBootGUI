@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/com/efibootmgrgui">
+    <file alias="qmldir">/home/techxero/xwork/EfiBootMgrGUI/build/com/efibootmgrgui/qmldir</file>
+  </qresource>
+</RCC>
+

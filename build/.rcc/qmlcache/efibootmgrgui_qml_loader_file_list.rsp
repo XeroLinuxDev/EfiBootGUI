@@ -1,0 +1,10 @@
+--resource
+/home/techxero/xwork/EfiBootMgrGUI/build/.qt/rcc/qmake_com_efibootmgrgui.qrc
+--resource
+/home/techxero/xwork/EfiBootMgrGUI/build/.qt/rcc/efibootmgrgui_raw_qml_0.qrc
+--resource
+/home/techxero/xwork/EfiBootMgrGUI/build/.qt/rcc/efibootmgrgui_raw_res_0.qrc
+/com/efibootmgrgui/qml/main.qml
+/com/efibootmgrgui/qml/BootEntryDelegate.qml
+/com/efibootmgrgui/qml/ConfirmDialog.qml
+/com/efibootmgrgui/qml/AboutWindow.qml

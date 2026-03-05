@@ -1,0 +1,197 @@
+{
+    "classes": [
+        {
+            "className": "BootManager",
+            "lineNumber": 10,
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "lineNumber": 13,
+                    "name": "loading",
+                    "notify": "loadingChanged",
+                    "read": "loading",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "lineNumber": 14,
+                    "name": "bootOrder",
+                    "notify": "bootOrderChanged",
+                    "read": "bootOrder",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 2,
+                    "lineNumber": 15,
+                    "name": "log",
+                    "notify": "logChanged",
+                    "read": "log",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "BootManager",
+            "signals": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "lineNumber": 48,
+                    "name": "loadingChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 1,
+                    "lineNumber": 49,
+                    "name": "bootOrderChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 2,
+                    "lineNumber": 50,
+                    "name": "logChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "success",
+                            "type": "bool"
+                        },
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 3,
+                    "lineNumber": 51,
+                    "name": "operationFinished",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "public",
+                    "index": 4,
+                    "lineNumber": 38,
+                    "name": "refresh",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "bootNum",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "active",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 5,
+                    "lineNumber": 39,
+                    "name": "setActive",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "bootNum",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 6,
+                    "lineNumber": 40,
+                    "name": "deleteEntry",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "index",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 7,
+                    "lineNumber": 41,
+                    "name": "moveUp",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "index",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 8,
+                    "lineNumber": 42,
+                    "name": "moveDown",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 9,
+                    "lineNumber": 43,
+                    "name": "applyBootOrder",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "bootNum",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 10,
+                    "lineNumber": 44,
+                    "name": "setBootNext",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 11,
+                    "lineNumber": 45,
+                    "name": "clearBootNext",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QAbstractListModel"
+                }
+            ]
+        }
+    ],
+    "inputFile": "bootmanager.h",
+    "outputRevision": 69
+}

@@ -1,0 +1,15 @@
+-rootPath
+/home/techxero/xwork/EfiBootMgrGUI
+-cmake-output
+-output-file
+/home/techxero/xwork/EfiBootMgrGUI/build/.qt/qml_imports/efibootmgrgui_build.cmake
+-importPath
+/home/techxero/xwork/EfiBootMgrGUI/build
+-importPath
+/home/techxero/xwork/EfiBootMgrGUI/build/com/efibootmgrgui
+-importPath
+/usr/lib/qt6/qml
+-qrcFiles
+/home/techxero/xwork/EfiBootMgrGUI/build/.qt/rcc/qmake_com_efibootmgrgui.qrc
+/home/techxero/xwork/EfiBootMgrGUI/build/.qt/rcc/efibootmgrgui_raw_qml_0.qrc
+/home/techxero/xwork/EfiBootMgrGUI/build/.qt/rcc/efibootmgrgui_raw_res_0.qrc
