@@ -22,11 +22,6 @@ makedepends=(
 source=("git+$url.git")
 sha256sums=('SKIP')
 
-pkgver() {
-    cd "EfiBootGUI"
-    git describe --tags --abbrev=0 | sed 's/^v//'
-}
-
 build() {
     cmake -B build -S "EfiBootGUI" \
         -G Ninja \
