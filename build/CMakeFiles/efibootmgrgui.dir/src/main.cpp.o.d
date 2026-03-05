@@ -402,6 +402,7 @@ CMakeFiles/efibootmgrgui.dir/src/main.cpp.o: \
  /usr/include/qt6/QtGui/qtransform.h \
  /usr/include/qt6/QtGui/qscreen_platform.h \
  /usr/include/qt6/QtGui/qkeysequence.h /usr/include/qt6/QtQml/qqmlinfo.h \
+ /usr/include/qt6/QtGui/QStyleHints /usr/include/qt6/QtGui/qstylehints.h \
  /usr/include/qt6/QtGui/QIcon /usr/include/qt6/QtGui/qicon.h \
  /usr/include/qt6/QtCore/QDir /usr/include/qt6/QtCore/qdir.h \
  /usr/include/qt6/QtCore/qdirlisting.h \

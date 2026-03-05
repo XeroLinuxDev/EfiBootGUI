@@ -3994,13 +3994,8 @@ CMakeFiles/efibootmgrgui.dir/src/bootmanager.cpp.o: /home/techxero/xwork/EfiBoot
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h
 
 CMakeFiles/efibootmgrgui.dir/src/main.cpp.o: /home/techxero/xwork/EfiBootMgrGUI/src/main.cpp \
-  efibootmgrgui_autogen/include/main.moc \
   /home/techxero/xwork/EfiBootMgrGUI/src/bootentry.h \
   /home/techxero/xwork/EfiBootMgrGUI/src/bootmanager.h \
-  /usr/include/KF6/KWindowSystem/KWindowEffects \
-  /usr/include/KF6/KWindowSystem/kwindoweffects.h \
-  /usr/include/KF6/KWindowSystem/kwindowsystem_export.h \
-  /usr/include/KF6/KWindowSystem/kwindowsystem_version.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
@@ -4326,12 +4321,10 @@ CMakeFiles/efibootmgrgui.dir/src/main.cpp.o: /home/techxero/xwork/EfiBootMgrGUI/
   /usr/include/qt6/QtCore/QRectF \
   /usr/include/qt6/QtCore/QSize \
   /usr/include/qt6/QtCore/QSizeF \
-  /usr/include/qt6/QtCore/QStandardPaths \
   /usr/include/qt6/QtCore/QString \
   /usr/include/qt6/QtCore/QStringList \
   /usr/include/qt6/QtCore/QVector \
   /usr/include/qt6/QtCore/q17memory.h \
-  /usr/include/qt6/QtCore/q20algorithm.h \
   /usr/include/qt6/QtCore/q20functional.h \
   /usr/include/qt6/QtCore/q20iterator.h \
   /usr/include/qt6/QtCore/q20memory.h \
@@ -4436,7 +4429,6 @@ CMakeFiles/efibootmgrgui.dir/src/main.cpp.o: /home/techxero/xwork/EfiBootMgrGUI/
   /usr/include/qt6/QtCore/qsharedpointer_impl.h \
   /usr/include/qt6/QtCore/qsize.h \
   /usr/include/qt6/QtCore/qspan.h \
-  /usr/include/qt6/QtCore/qstandardpaths.h \
   /usr/include/qt6/QtCore/qstdlibdetection.h \
   /usr/include/qt6/QtCore/qstring.h \
   /usr/include/qt6/QtCore/qstringalgorithms.h \
@@ -4465,8 +4457,6 @@ CMakeFiles/efibootmgrgui.dir/src/main.cpp.o: /home/techxero/xwork/EfiBootMgrGUI/
   /usr/include/qt6/QtCore/qtformat_impl.h \
   /usr/include/qt6/QtCore/qtimezone.h \
   /usr/include/qt6/QtCore/qtmetamacros.h \
-  /usr/include/qt6/QtCore/qtmocconstants.h \
-  /usr/include/qt6/QtCore/qtmochelpers.h \
   /usr/include/qt6/QtCore/qtnoop.h \
   /usr/include/qt6/QtCore/qtpreprocessorsupport.h \
   /usr/include/qt6/QtCore/qtresource.h \
@@ -4486,13 +4476,11 @@ CMakeFiles/efibootmgrgui.dir/src/main.cpp.o: /home/techxero/xwork/EfiBootMgrGUI/
   /usr/include/qt6/QtCore/qversiontagging.h \
   /usr/include/qt6/QtCore/qxptype_traits.h \
   /usr/include/qt6/QtCore/qyieldcpu.h \
-  /usr/include/qt6/QtGui/QColor \
   /usr/include/qt6/QtGui/QGuiApplication \
   /usr/include/qt6/QtGui/QIcon \
   /usr/include/qt6/QtGui/QMatrix4x4 \
-  /usr/include/qt6/QtGui/QRegion \
+  /usr/include/qt6/QtGui/QStyleHints \
   /usr/include/qt6/QtGui/QTransform \
-  /usr/include/qt6/QtGui/QWidgetList \
   /usr/include/qt6/QtGui/qbitmap.h \
   /usr/include/qt6/QtGui/qcolor.h \
   /usr/include/qt6/QtGui/qcursor.h \
@@ -4517,6 +4505,7 @@ CMakeFiles/efibootmgrgui.dir/src/main.cpp.o: /home/techxero/xwork/EfiBootMgrGUI/
   /usr/include/qt6/QtGui/qrgba64.h \
   /usr/include/qt6/QtGui/qscreen.h \
   /usr/include/qt6/QtGui/qscreen_platform.h \
+  /usr/include/qt6/QtGui/qstylehints.h \
   /usr/include/qt6/QtGui/qsurface.h \
   /usr/include/qt6/QtGui/qsurfaceformat.h \
   /usr/include/qt6/QtGui/qtgui-config.h \
@@ -4603,7 +4592,6 @@ efibootmgrgui: /usr/lib/Scrt1.o \
   /usr/lib/libEGL.so.1 \
   /usr/lib/libGLX.so \
   /usr/lib/libGLdispatch.so.0 \
-  /usr/lib/libKF6WindowSystem.so.6.23.0 \
   /usr/lib/libOpenGL.so \
   /usr/lib/libQt6Core.so.6.10.2 \
   /usr/lib/libQt6DBus.so.6 \
@@ -4617,10 +4605,9 @@ efibootmgrgui: /usr/lib/Scrt1.o \
   /usr/lib/libQt6Quick.so.6.10.2 \
   /usr/lib/libQt6QuickControls2.so.6.10.2 \
   /usr/lib/libQt6QuickTemplates2.so.6 \
-  /usr/lib/libX11.so \
+  /usr/lib/libX11.so.6 \
   /usr/lib/libXau.so.6 \
   /usr/lib/libXdmcp.so.6 \
-  /usr/lib/libXfixes.so.3 \
   /usr/lib/libb2.so.1 \
   /usr/lib/libblkid.so.1 \
   /usr/lib/libbrotlicommon.so.1 \
@@ -4673,8 +4660,6 @@ efibootmgrgui: /usr/lib/Scrt1.o \
   /usr/lib/libssl.so.3 \
   /usr/lib/libsystemd.so.0 \
   /usr/lib/libunistring.so.5 \
-  /usr/lib/libxcb-keysyms.so.1 \
-  /usr/lib/libxcb-res.so.0 \
   /usr/lib/libxcb.so.1 \
   /usr/lib/libxkbcommon.so.0 \
   /usr/lib/libz.so.1 \
@@ -4682,7 +4667,6 @@ efibootmgrgui: /usr/lib/Scrt1.o \
   /usr/lib32/libGLdispatch.so.0 \
   /usr/lib32/libXau.so.6 \
   /usr/lib32/libXdmcp.so.6 \
-  /usr/lib32/libXfixes.so.3 \
   /usr/lib32/libblkid.so.1 \
   /usr/lib32/libbrotlicommon.so.1 \
   /usr/lib32/libbz2.so.1.0 \
@@ -4711,8 +4695,6 @@ efibootmgrgui: /usr/lib/Scrt1.o \
   /usr/lib32/libssh2.so.1 \
   /usr/lib32/libssl.so.3 \
   /usr/lib32/libunistring.so.5 \
-  /usr/lib32/libxcb-keysyms.so.1 \
-  /usr/lib32/libxcb-res.so.0 \
   /usr/lib32/libxcb.so.1 \
   CMakeFiles/efibootmgrgui.dir/build/.qt/rcc/qrc_efibootmgrgui_raw_qml_0.cpp.o \
   CMakeFiles/efibootmgrgui.dir/build/.qt/rcc/qrc_efibootmgrgui_raw_res_0.cpp.o \
@@ -4779,8 +4761,6 @@ CMakeFiles/efibootmgrgui.dir/build/.qt/rcc/qrc_efibootmgrgui_raw_qml_0.cpp.o:
 
 /usr/lib32/libblkid.so.1:
 
-/usr/lib32/libXfixes.so.3:
-
 /usr/lib32/libXau.so.6:
 
 /usr/lib32/libidn2.so.0:
@@ -4788,10 +4768,6 @@ CMakeFiles/efibootmgrgui.dir/build/.qt/rcc/qrc_efibootmgrgui_raw_qml_0.cpp.o:
 /usr/lib32/libGLdispatch.so.0:
 
 /usr/lib/libxcb.so.1:
-
-/usr/lib/libxcb-res.so.0:
-
-/usr/lib/libxcb-keysyms.so.1:
 
 /usr/lib/libssl.so.3:
 
@@ -4847,10 +4823,6 @@ CMakeFiles/efibootmgrgui.dir/build/.qt/rcc/qrc_efibootmgrgui_raw_qml_0.cpp.o:
 
 /usr/lib/libb2.so.1:
 
-/usr/lib/libXfixes.so.3:
-
-/usr/lib/libX11.so:
-
 /usr/lib/libQt6QuickTemplates2.so.6:
 
 /usr/lib/libQt6QuickControls2.so.6.10.2:
@@ -4872,8 +4844,6 @@ CMakeFiles/efibootmgrgui.dir/build/.qt/rcc/qrc_efibootmgrgui_raw_qml_0.cpp.o:
 /usr/lib/libQt6Gui.so.6.10.2:
 
 /usr/lib/libQt6Core.so.6.10.2:
-
-/usr/lib/libKF6WindowSystem.so.6.23.0:
 
 /usr/lib/libGLX.so:
 
@@ -4921,9 +4891,15 @@ CMakeFiles/efibootmgrgui.dir/build/.qt/rcc/qrc_efibootmgrgui_raw_qml_0.cpp.o:
 
 /usr/include/qt6/QtGui/qsurfaceformat.h:
 
+/usr/include/qt6/QtGui/qstylehints.h:
+
 /usr/include/qt6/QtGui/qscreen_platform.h:
 
 /usr/include/qt6/QtGui/qscreen.h:
+
+/usr/lib32/libcurl.so.4:
+
+/usr/include/qt6/QtGui/qrgba64.h:
 
 /usr/lib/libngtcp2.so.16:
 
@@ -4955,31 +4931,11 @@ CMakeFiles/efibootmgrgui.dir/build/.qt/rcc/qrc_efibootmgrgui_raw_qml_0.cpp.o:
 
 /usr/include/qt6/QtGui/QMatrix4x4:
 
-/usr/include/qt6/QtGui/QColor:
-
-/usr/include/qt6/QtCore/qstandardpaths.h:
-
 /usr/include/qt6/QtCore/qsize.h:
 
 /usr/include/qt6/QtCore/qpoint.h:
 
 /usr/include/qt6/QtCore/qnativeinterface.h:
-
-/usr/lib32/libXdmcp.so.6:
-
-/usr/include/qt6/QtCore/qline.h:
-
-/usr/include/qt6/QtCore/qeventloop.h:
-
-/usr/include/qt6/QtCore/qdeadlinetimer.h:
-
-/usr/include/qt6/QtGui/qbitmap.h:
-
-/usr/include/qt6/QtCore/qcoreevent.h:
-
-/usr/include/qt6/QtCore/qcoreapplication_platform.h:
-
-/usr/include/qt6/QtCore/qcoreapplication.h:
 
 /usr/lib/libnghttp3.so.9:
 
@@ -5079,8 +5035,6 @@ CMakeFiles/efibootmgrgui.dir/build/.qt/rcc/qrc_efibootmgrgui_raw_qml_0.cpp.o:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h:
 
-/usr/include/qt6/QtCore/QStandardPaths:
-
 /usr/lib/libpsl.so.5:
 
 /usr/include/c++/15.2.1/pstl/glue_numeric_defs.h:
@@ -5088,8 +5042,6 @@ CMakeFiles/efibootmgrgui.dir/build/.qt/rcc/qrc_efibootmgrgui_raw_qml_0.cpp.o:
 /usr/include/c++/15.2.1/bits/unordered_set.h:
 
 /usr/include/c++/15.2.1/bits/unordered_map.h:
-
-/usr/include/KF6/KWindowSystem/KWindowEffects:
 
 /usr/include/c++/15.2.1/bits/uniform_int_dist.h:
 
@@ -5203,8 +5155,6 @@ CMakeFiles/efibootmgrgui.dir/build/.rcc/qmlcache/efibootmgrgui_qmlcache_loader.c
 
 /usr/include/c++/15.2.1/system_error:
 
-/usr/include/qt6/QtGui/QWidgetList:
-
 /usr/include/asm/errno.h:
 
 /usr/include/c++/15.2.1/bits/new_allocator.h:
@@ -5218,6 +5168,8 @@ CMakeFiles/efibootmgrgui.dir/build/.rcc/qmlcache/efibootmgrgui_qmlcache_loader.c
 /usr/include/c++/15.2.1/bits/nested_exception.h:
 
 /usr/include/qt6/QtCore/qstringfwd.h:
+
+/usr/include/c++/15.2.1/bits/move.h:
 
 /usr/include/qt6/QtCore/qtaggedpointer.h:
 
@@ -5240,6 +5192,8 @@ CMakeFiles/efibootmgrgui.dir/build/.rcc/qmlcache/efibootmgrgui_qmlcache_loader.c
 /usr/include/c++/15.2.1/type_traits:
 
 /usr/include/c++/15.2.1/bits/align.h:
+
+/usr/include/qt6/QtGui/QStyleHints:
 
 /usr/include/bits/thread-shared-types.h:
 
@@ -5277,6 +5231,8 @@ efibootmgrgui_autogen/UVLADIE3JM/moc_bootmanager.cpp:
 
 /usr/include/bits/waitstatus.h:
 
+/usr/include/bits/select.h:
+
 /usr/include/c++/15.2.1/bits/stl_algobase.h:
 
 /usr/include/qt6/QtCore/qprocess.h:
@@ -5290,6 +5246,8 @@ efibootmgrgui_autogen/UVLADIE3JM/moc_bootmanager.cpp:
 /usr/include/c++/15.2.1/bits/functional_hash.h:
 
 /usr/include/c++/15.2.1/bits/stl_numeric.h:
+
+/usr/include/qt6/QtCore/qdebug.h:
 
 /usr/include/qt6/QtCore/qpointer.h:
 
@@ -5348,6 +5306,8 @@ efibootmgrgui_autogen/UVLADIE3JM/moc_bootmanager.cpp:
 /usr/include/qt6/QtCore/q20algorithm.h:
 
 /usr/include/qt6/QtCore/qdatastream.h:
+
+/usr/include/qt6/QtCore/qcoreapplication.h:
 
 /usr/include/bits/floatn.h:
 
@@ -5474,6 +5434,8 @@ CMakeFiles/efibootmgrgui.dir/build/.rcc/qmlcache/efibootmgrgui_qml/ConfirmDialog
 /usr/include/wchar.h:
 
 /usr/include/qt6/QtCore/qtmocconstants.h:
+
+/usr/lib/libX11.so.6:
 
 /usr/include/c++/15.2.1/bits/stl_set.h:
 
@@ -5691,8 +5653,6 @@ efibootmgrgui_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/15.2.1/backward/auto_ptr.h:
 
-/usr/include/qt6/QtGui/QRegion:
-
 /usr/include/c++/15.2.1/bits/basic_ios.h:
 
 /usr/include/asm/bitsperlong.h:
@@ -5767,8 +5727,6 @@ efibootmgrgui_qmltyperegistrations.cpp:
 
 /usr/include/gnu/stubs.h:
 
-/usr/lib32/libxcb-keysyms.so.1:
-
 /usr/include/qt6/QtCore/qatomic.h:
 
 /usr/include/linux/errno.h:
@@ -5776,6 +5734,10 @@ efibootmgrgui_qmltyperegistrations.cpp:
 /usr/lib/crtn.o:
 
 /usr/include/linux/limits.h:
+
+/usr/include/qt6/QtGui/qbitmap.h:
+
+/usr/include/qt6/QtCore/qcoreevent.h:
 
 /usr/include/linux/sched/types.h:
 
@@ -5792,10 +5754,6 @@ efibootmgrgui_qmltyperegistrations.cpp:
 /usr/include/qt6/QtCore/q20iterator.h:
 
 /usr/include/qt6/QtCore/q20memory.h:
-
-/usr/include/c++/15.2.1/bits/move.h:
-
-efibootmgrgui_autogen/include/main.moc:
 
 /usr/include/c++/15.2.1/array:
 
@@ -5903,8 +5861,6 @@ efibootmgrgui_autogen/include/main.moc:
 
 /usr/include/qt6/QtCore/QStringList:
 
-/usr/lib32/libxcb-res.so.0:
-
 /usr/include/qt6/QtCore/QEvent:
 
 /usr/include/c++/15.2.1/ext/alloc_traits.h:
@@ -5950,10 +5906,6 @@ CMakeFiles/efibootmgrgui.dir/src/bootentry.cpp.o:
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_inline.h:
 
 /usr/include/qt6/QtCore/qnamespace.h:
-
-/usr/include/qt6/QtCore/qdebug.h:
-
-/usr/include/KF6/KWindowSystem/kwindoweffects.h:
 
 /usr/include/qt6/QtCore/qnumeric.h:
 
@@ -6203,16 +6155,6 @@ CMakeFiles/efibootmgrgui.dir/build/.qt/rcc/qrc_qmake_com_efibootmgrgui.cpp.o:
 
 /home/techxero/xwork/EfiBootMgrGUI/src/bootentry.cpp:
 
-/usr/lib32/libcurl.so.4:
-
-/usr/include/qt6/QtGui/qrgba64.h:
-
-/usr/include/KF6/KWindowSystem/kwindowsystem_export.h:
-
-/usr/include/bits/select.h:
-
-/usr/include/KF6/KWindowSystem/kwindowsystem_version.h:
-
 /usr/include/c++/15.2.1/utility:
 
 /usr/include/qt6/QtCore/QList:
@@ -6228,3 +6170,13 @@ CMakeFiles/efibootmgrgui.dir/build/.qt/rcc/qrc_qmake_com_efibootmgrgui.cpp.o:
 /usr/include/qt6/QtCore/QSizeF:
 
 /usr/include/qt6/QtCore/qabstracteventdispatcher.h:
+
+/usr/include/qt6/QtCore/qcoreapplication_platform.h:
+
+/usr/include/qt6/QtCore/qdeadlinetimer.h:
+
+/usr/include/qt6/QtCore/qeventloop.h:
+
+/usr/lib32/libXdmcp.so.6:
+
+/usr/include/qt6/QtCore/qline.h:

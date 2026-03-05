@@ -3,6 +3,7 @@
 #include <QQmlContext>
 #include <QQuickImageProvider>
 #include <QQuickWindow>
+#include <QStyleHints>
 #include <QIcon>
 #include <QDir>
 #include <QStandardPaths>
@@ -40,6 +41,9 @@ int main(int argc, char *argv[])
     app.setOrganizationName("xero");
     app.setApplicationName("EfiBootMgrGUI");
     app.setApplicationVersion("1.0.0");
+
+    // Tell the compositor this app wants dark window decorations
+    app.styleHints()->setColorScheme(Qt::ColorScheme::Dark);
 
     // Build icon search paths from XDG standard locations (safe for any user/DE)
     {

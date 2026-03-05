@@ -9,6 +9,7 @@ Dialog {
     property string message: ""
     property bool destructive: true
 
+    width: 520
     modal: true
     standardButtons: Dialog.NoButton
 
@@ -21,51 +22,80 @@ Dialog {
 
     contentItem: ColumnLayout {
         spacing: 0
+        width: root.width
 
-        // Icon + title
-        RowLayout {
+        // Colored header block
+        Rectangle {
             Layout.fillWidth: true
-            Layout.topMargin: 24
-            Layout.leftMargin: 24
-            Layout.rightMargin: 24
-            spacing: 12
+            implicitHeight: headerRow.implicitHeight + 40
+            color: root.destructive ? "#5a1a1a" : "#0f1e3a"
+            radius: 12
 
-            Label {
-                text: root.destructive ? "⚠" : "✦"
-                font.pixelSize: 28
-                color: root.destructive ? "#d9534f" : "#5b9bd5"
+            // Square bottom corners so it blends into dialog body
+            Rectangle {
+                anchors { bottom: parent.bottom; left: parent.left; right: parent.right }
+                height: parent.radius
+                color: parent.color
             }
 
-            Label {
-                text: root.actionTitle
-                font.pixelSize: 16
-                font.bold: true
-                color: "#e8e8e8"
-                Layout.fillWidth: true
-                wrapMode: Text.WordWrap
+            RowLayout {
+                id: headerRow
+                anchors { left: parent.left; right: parent.right; verticalCenter: parent.verticalCenter; margins: 28 }
+                spacing: 14
+
+                Label {
+                    text: root.destructive ? "⚠" : "✦"
+                    font.pixelSize: 32
+                    color: root.destructive ? "#ff9090" : "#88b8e8"
+                }
+
+                Column {
+                    spacing: 4
+                    Layout.fillWidth: true
+                    Label {
+                        text: root.actionTitle
+                        font.pixelSize: 17
+                        font.bold: true
+                        color: "#ffffff"
+                        width: parent.width
+                        wrapMode: Text.WordWrap
+                    }
+                    Label {
+                        text: "Please review before continuing"
+                        font.pixelSize: 11
+                        color: root.destructive ? "#dd9090" : "#7898c8"
+                    }
+                }
             }
+        }
+
+        // Divider
+        Rectangle {
+            Layout.fillWidth: true
+            height: 1
+            color: "#3e3e48"
         }
 
         // Message
         Label {
             Layout.fillWidth: true
-            Layout.topMargin: 16
-            Layout.leftMargin: 24
-            Layout.rightMargin: 24
+            Layout.topMargin: 20
+            Layout.leftMargin: 28
+            Layout.rightMargin: 28
             text: root.message
             wrapMode: Text.WordWrap
-            font.pixelSize: 13
-            lineHeight: 1.5
-            color: "#c8c8c8"
+            font.pixelSize: 14
+            lineHeight: 1.6
+            color: "#d0d0d0"
         }
 
         // Irreversibility warning
         Rectangle {
             Layout.fillWidth: true
             Layout.topMargin: 16
-            Layout.leftMargin: 24
-            Layout.rightMargin: 24
-            height: warningLabel.implicitHeight + 16
+            Layout.leftMargin: 28
+            Layout.rightMargin: 28
+            height: warningLabel.implicitHeight + 18
             color: root.destructive ? "#2a1010" : "#0f1e2a"
             border.color: root.destructive ? "#6e2020" : "#1e4a6e"
             border.width: 1
@@ -73,29 +103,36 @@ Dialog {
 
             Label {
                 id: warningLabel
-                anchors { left: parent.left; right: parent.right; verticalCenter: parent.verticalCenter; margins: 10 }
+                anchors { left: parent.left; right: parent.right; verticalCenter: parent.verticalCenter; margins: 12 }
                 text: "⚠  This action cannot be reverted once applied."
                 wrapMode: Text.WordWrap
-                font.pixelSize: 12
+                font.pixelSize: 13
                 color: root.destructive ? "#ff9090" : "#88b8d8"
             }
+        }
+
+        // Divider
+        Rectangle {
+            Layout.fillWidth: true
+            Layout.topMargin: 20
+            height: 1
+            color: "#3e3e48"
         }
 
         // Buttons
         RowLayout {
             Layout.fillWidth: true
-            Layout.topMargin: 20
-            Layout.bottomMargin: 24
-            Layout.leftMargin: 24
-            Layout.rightMargin: 24
+            Layout.topMargin: 16
+            Layout.bottomMargin: 20
+            Layout.leftMargin: 28
+            Layout.rightMargin: 28
             spacing: 10
 
             Item { Layout.fillWidth: true }
 
-            // Cancel
             Rectangle {
-                height: 34
-                implicitWidth: cancelLbl.implicitWidth + 28
+                height: 36
+                implicitWidth: cancelLbl.implicitWidth + 32
                 color: cancelMa.pressed ? "#464650" : cancelMa.containsMouse ? "#3e3e48" : "#383840"
                 border.color: "#505058"
                 border.width: 1
@@ -117,18 +154,17 @@ Dialog {
                 }
             }
 
-            // Confirm
             Rectangle {
-                height: 34
-                implicitWidth: confirmLbl.implicitWidth + 28
+                height: 36
+                implicitWidth: confirmLbl.implicitWidth + 32
                 color: {
                     if (confirmMa.pressed)
-                        return root.destructive ? "#a03030" : "#3a7a3a"
+                        return root.destructive ? "#a03030" : "#2a5ea0"
                     if (confirmMa.containsMouse)
-                        return root.destructive ? "#b03030" : "#3d8a3d"
-                    return root.destructive ? "#8b2020" : "#2d6a2d"
+                        return root.destructive ? "#b03030" : "#2f6ab0"
+                    return root.destructive ? "#8b2020" : "#1e4a80"
                 }
-                border.color: root.destructive ? "#d9534f" : "#5cb85c"
+                border.color: root.destructive ? "#d9534f" : "#5b9bd5"
                 border.width: 1
                 radius: 6
                 Behavior on color { ColorAnimation { duration: 100 } }
