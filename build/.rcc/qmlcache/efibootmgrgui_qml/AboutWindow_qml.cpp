@@ -3538,7 +3538,7 @@ return;
 {
 }
 // generate_LoadRuntimeString
-s.v2_5 = QUrl(QStringLiteral("https://github.com/XeroLinuxDev"));
+s.v2_5 = QUrl(QStringLiteral("https://github.com/XeroLinux"));
 {
 }
 // generate_StoreReg

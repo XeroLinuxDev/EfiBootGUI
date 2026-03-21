@@ -4,7 +4,7 @@ pkgver=1.0.6
 pkgrel=1
 pkgdesc="A GUI for managing UEFI/EFI boot entries on Linux — no terminal required"
 arch=('x86_64')
-url="https://github.com/XeroLinuxDev/EfiBootGUI"
+url="https://github.com/XeroLinux/EfiBootGUI"
 license=('GPL-3.0-or-later')
 depends=(
     'efibootmgr'

@@ -132,10 +132,10 @@ Dialog {
                     MouseArea {
                         id: ghMa; anchors.fill: parent; hoverEnabled: true
                         cursorShape: Qt.PointingHandCursor
-                        onClicked: Qt.openUrlExternally("https://github.com/XeroLinuxDev")
+                        onClicked: Qt.openUrlExternally("https://github.com/XeroLinux")
                     }
                     ToolTip.visible: ghMa.containsMouse
-                    ToolTip.text: "https://github.com/XeroLinuxDev"
+                    ToolTip.text: "https://github.com/XeroLinux"
                 }
 
                 // Donate
